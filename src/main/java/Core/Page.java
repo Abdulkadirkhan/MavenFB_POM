@@ -14,6 +14,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
+import Util.Xls_Reader;
+
 
 public class Page {
 	
@@ -21,7 +23,7 @@ public class Page {
 	public static Properties config = new Properties();
 	public static Properties object = new Properties();
 	public static FileInputStream fis;
-	
+	public static Xls_Reader excel = new Xls_Reader(System.getProperty("user.dir")+"\\src\\main\\resources\\testdata.xlsx");
 	
 	public Page()
 	{
