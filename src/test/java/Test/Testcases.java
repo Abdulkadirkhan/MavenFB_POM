@@ -12,7 +12,7 @@ public class Testcases {
 	public static void main(String[] args) {
 		
       LoginPage loginpage = new LoginPage();
-      LandingPage landpage = loginpage.dologin("abdulkadir786@gmail.com", "victory4fame123");
+      LandingPage landpage = loginpage.dologin("abdulkadir786@gmail.com", "");
       MyProfilePage profilepage = landpage.gotoprofile();
       FriendsPage friendpage = profilepage.gotofriends();
       Assert.assertTrue(friendpage.searchfriend("Vinay Kumar"), "Friend not found");
